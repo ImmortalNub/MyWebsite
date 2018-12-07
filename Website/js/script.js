@@ -1,13 +1,4 @@
 // General
-function initialization() {
-	populateDropdowns();
-}
-
-function populateDropdowns() {
-	basicTutorials();
-	buckyTutorials();
-}
-
 function dropdownList(id, titles) {
 	// Create list items with a URL and a title.
 	var link = document.getElementById(id);
@@ -23,6 +14,16 @@ function dropdownList(id, titles) {
 	}
 }
 
+function initialization() {
+	populateDropdowns();
+}
+
+function populateDropdowns() {
+	basicTutorials();
+	buckyTutorials();
+	miscNotes();
+}
+
 // W3Schools
 function basicTutorials() {
 	// Set element ID.
@@ -33,10 +34,12 @@ function basicTutorials() {
 			"https://www.w3schools.com/css/default.asp":          "CSS",
 			"https://www.w3schools.com/bootstrap/default.asp":    "Bootstrap",
 			"https://www.w3schools.com/js/default.asp":           "JavaScript",
+			"https://www.w3schools.com/jquery/default.asp":       "jQuery",
+			"https://www.w3schools.com/angular/default.asp":      "AngularJS",
 			"https://www.w3schools.com/php/default.asp":          "PHP"
 	};
 
-	// Call dropdownList with W3Schools titles.
+	// Call dropdownList with titles.
 	dropdownList(id, titles);
 }
 
@@ -51,10 +54,11 @@ function buckyAngularJS() {
 	var id = "bucky-angular-js";
 	// Create an array-like object for titles.
 	var titles = {
-			"https://www.youtube.com/watch?v=hXfigUyeHaY&list=PL6gx4Cwl9DGBYxWxJtLi8c6PGjNKGYGZZ&ab_channel=thenewboston": "1: Getting Started",
+			"https://www.youtube.com/watch?v=hXfigUyeHaY&list=PL6gx4Cwl9DGBYxWxJtLi8c6PGjNKGYGZZ&ab_channel=thenewboston":         "1: Getting Started",
+			"https://www.youtube.com/watch?v=vc9n0j6-D2U&index=2&list=PL6gx4Cwl9DGBYxWxJtLi8c6PGjNKGYGZZ&ab_channel=thenewboston": "2: Overview and Core Concepts"
 	};
 
-	// Call dropdownList with W3Schools titles.
+	// Call dropdownList with titles.
 	dropdownList(id, titles);
 }
 
@@ -69,6 +73,19 @@ function buckyHTML() {
 			"https://www.youtube.com/watch?v=bi7ccKky8JU&list=PL081AC329706B2953&index=15&frags=wn&ab_channel=thenewboston": "15: Styling the Header and Navigation"
 	};
 
-	// Call dropdownList with W3Schools titles.
+	// Call dropdownList with titles.
+	dropdownList(id, titles);
+}
+
+// Notes
+function miscNotes() {
+	// Set element ID.
+	var id = "misc-notes";
+	// Create an array-like object for titles.
+	var titles = {
+			"https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file": "Html within Html"
+	};
+
+	// Call dropdownList with titles.
 	dropdownList(id, titles);
 }
