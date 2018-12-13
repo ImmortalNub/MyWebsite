@@ -51,11 +51,11 @@
 	color: red;
 }
 
-.content > div:nth-child(even) {
+.content > div:nth-child(even), .content-alt > div:nth-child(odd) {
 	background: #33CC33;
 }
 
-.content > div:nth-child(odd) {
+.content > div:nth-child(odd), .content-alt > div:nth-child(even) {
 	background: #00B8E6;
 }
 

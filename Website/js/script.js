@@ -1,7 +1,7 @@
 // General
 function dropdownList(id, titles) {
 	// Create list items with a URL and a title.
-	var link = document.getElementById(id);
+	var links = document.getElementById(id);
 	for (var url in titles) {
 		// Create the list element
 		var newLink = document.createElement("li");
@@ -10,12 +10,41 @@ function dropdownList(id, titles) {
 		newLink.innerHTML = "<a href=" + url + " target='_blank' rel='noopener noreferrer'>"
 								+ titles[url] +
 							"</a>";
-		link.appendChild(newLink);
+		links.appendChild(newLink);
 	}
+}
+
+function fibonacci(id, count) {
+	// Create initial variables.
+	var numbers = document.getElementById(id);
+	var prev    = 0;
+	var current = 1;
+	var next    = 0;
+
+	// Create list items for fibonacci numbers.
+	for (var i = 0; i < count; i++) {
+		// Create the list element.
+		var newNumber = document.createElement("li");
+
+		// Put the current fibonacci number on the screen.
+		newNumber.innerHTML = current;
+		numbers.appendChild(newNumber);
+
+		// Increment the variables through the fibonacci numbers.
+		next    = prev + current;
+		prev    = current;
+		current = next;
+	}
+
+	// Reset the variables just to be thorough.
+	prev    = 0;
+	current = 0;
+	next    = 0;
 }
 
 function initialization() {
 	populateDropdowns();
+	fibonacci("fibonacci", 50);
 }
 
 function populateDropdowns() {
