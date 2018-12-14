@@ -1,4 +1,15 @@
 // General
+
+/**************************************************************************
+* Use: Populates a dropdown list with titles and links to the sources.
+* 	The list items will open a new tab when clicked on.
+* 
+* Arguments:
+* 		string id: Target ID of the element to add list items. Must be a ul or ol.
+* 		string titles[]: Array of titles with hyperlinks as their indexes.
+* 
+* Return: None
+***************************************************************************/
 function dropdownList(id, titles) {
 	// Create list items with a URL and a title.
 	var links = document.getElementById(id);
@@ -14,7 +25,16 @@ function dropdownList(id, titles) {
 	}
 }
 
-function fibonacci(id, count) {
+/**************************************************************************
+* Use: Calculates the fibonacci series.
+* 
+* Arguments:
+* 		string id: Target ID of the list to be populated with the fibonacci series.
+* 		int size: Determines how many numbers of the series will be printed.
+* 
+* Return: None
+***************************************************************************/
+function fibonacci(id, size) {
 	// Create initial variables.
 	var numbers = document.getElementById(id);
 	var prev    = 0;
@@ -22,7 +42,7 @@ function fibonacci(id, count) {
 	var next    = 0;
 
 	// Create list items for fibonacci numbers.
-	for (var i = 0; i < count; i++) {
+	for (var i = 0; i < size; i++) {
 		// Create the list element.
 		var newNumber = document.createElement("li");
 
@@ -42,11 +62,25 @@ function fibonacci(id, count) {
 	next    = 0;
 }
 
+/**************************************************************************
+* Use: Called at the HTML body, and calls the initial methods.
+* 
+* Arguments: None
+* 
+* Return: None
+***************************************************************************/
 function initialization() {
 	populateDropdowns();
 	fibonacci("fibonacci", 50);
 }
 
+/**************************************************************************
+* Use: Populates the dropdown lists.
+* 
+* Arguments: None
+* 
+* Return: None
+***************************************************************************/
 function populateDropdowns() {
 	basicTutorials();
 	buckyTutorials();
@@ -54,6 +88,13 @@ function populateDropdowns() {
 }
 
 // W3Schools
+/**************************************************************************
+* Use: Dropdown list for W3Schools.
+* 
+* Arguments: None
+* 
+* Return: None
+***************************************************************************/
 function basicTutorials() {
 	// Set element ID.
 	var id = "w3schools";
@@ -73,11 +114,25 @@ function basicTutorials() {
 }
 
 // TheNewBoston
+/**************************************************************************
+* Use: Populates the dropdown lists for Bucky's tutorials.
+* 
+* Arguments: None
+* 
+* Return: None
+***************************************************************************/
 function buckyTutorials() {
 	buckyHTML();
 	buckyAngularJS();
 }
 
+/**************************************************************************
+* Use: Dropdown list for Bucky's AngularJS tutorials.
+* 
+* Arguments: None
+* 
+* Return: None
+***************************************************************************/
 function buckyAngularJS() {
 	// Set element ID.
 	var id = "bucky-angular-js";
@@ -91,6 +146,13 @@ function buckyAngularJS() {
 	dropdownList(id, titles);
 }
 
+/**************************************************************************
+* Use: Dropdown list for Bucky's HTML tutorials.
+* 
+* Arguments: None
+* 
+* Return: None
+***************************************************************************/
 function buckyHTML() {
 	// Set element ID.
 	var id = "bucky-html";
@@ -107,12 +169,20 @@ function buckyHTML() {
 }
 
 // Notes
+/**************************************************************************
+* Use: Dropdown list for miscellaneous notes.
+* 
+* Arguments: None
+* 
+* Return: None
+***************************************************************************/
 function miscNotes() {
 	// Set element ID.
 	var id = "misc-notes";
 	// Create an array-like object for titles.
 	var titles = {
-			"https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file": "Html within Html"
+			"https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file": "Html within Html",
+			"https://www.w3schools.com/angular/angular_modules.asp":                                "Angular Modules and Controllers in Files"
 	};
 
 	// Call dropdownList with titles.
