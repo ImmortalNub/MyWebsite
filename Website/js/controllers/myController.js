@@ -1,20 +1,21 @@
 app.controller("myController", function($scope) {
-    $scope.firstName        = "Brian";
-    $scope.lastName         = "Janis";
-    $scope.updateFibonacci  = function() {
+    $scope.firstName       = "Brian";
+    $scope.lastName        = "Janis";
+    $scope.fibonacciId     = "fibonacci";
+    $scope.numSize         = 50;
+    $scope.updateFibonacci = function() {
         
         // Create initial variables.
-		var numbers = document.getElementById("fibonacci");
+		var numbers = document.getElementById($scope.fibonacciId);
 		var prev    = 0;
 		var current = 1;
 		var next    = 0;
-    	var size    = 20;
 
     	// Reset the fibonacci series on screen.
     	numbers.innerHTML = "";
 	
 		// Create list items for fibonacci numbers.
-		for (var i = 0; i < size; i++) {
+		for (var i = 0; i < $scope.numSize; i++) {
 			// Create the list element.
 			var newNumber = document.createElement("li");
 	

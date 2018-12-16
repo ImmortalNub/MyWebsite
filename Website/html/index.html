@@ -17,7 +17,7 @@
 				<div id="main-header">
 					<div class="row">
 						<div class="col-xs-12">
-							<h1>{{ firstName }} {{ lastName }}'s Home Page</h1>
+							<h1 ng-cloak>{{ firstName }} {{ lastName }}'s Home Page</h1>
 						</div>
 					</div>
 				</div>
@@ -116,14 +116,15 @@
 
 						<!-- Fibonacci List -->
 						<div class="col-xs-4">
-							<h1 ng-click="updateFibonacci()">Fibonacci Numbers</h1>
+							<h1>Fibonacci Numbers</h1>
+							<input ng-model="numSize" ng-change="updateFibonacci()" placeholder="Series size">
 							<ol id="fibonacci"></ol>
 						</div>
 
 						<!-- Simple Angular Application -->
 						<div class="col-xs-4">
 							<p>Type stuff here: <input type="text" ng-model="name"></p>
-							<h2>{{ name }}</h2>
+							<h2 ng-cloak>{{ name }}</h2>
 						</div>
 					</div>
 				</div>
@@ -140,7 +141,6 @@
 				</footer>
 			</div>
 		</div>
-		<script src="../js/script.js"></script>
 		<script src="../js/modules/myModule.js"></script>
 		<script src="../js/controllers/myController.js"></script>
 	</body>
