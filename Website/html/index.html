@@ -6,19 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="../js/script.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 
 	<body onload="initialization()">
-		<div class="container-fluid">
+		<div class="container-fluid" ng-app="myModule" ng-controller="myController">
 			<div id="main-container">
 				<div id="main-header">
 					<div class="row">
 						<div class="col-xs-12">
-							<h1>Home Page</h1>
+							<h1>{{ firstName }} {{ lastName }}'s Home Page</h1>
 						</div>
 					</div>
 				</div>
@@ -117,12 +116,12 @@
 
 						<!-- Fibonacci List -->
 						<div class="col-xs-4">
-							<h1>Fibonacci Numbers</h1>
+							<h1 ng-click="updateFibonacci()">Fibonacci Numbers</h1>
 							<ol id="fibonacci"></ol>
 						</div>
 
 						<!-- Simple Angular Application -->
-						<div class="col-xs-4" ng-app="">
+						<div class="col-xs-4">
 							<p>Type stuff here: <input type="text" ng-model="name"></p>
 							<h2>{{ name }}</h2>
 						</div>
@@ -141,5 +140,8 @@
 				</footer>
 			</div>
 		</div>
+		<script src="../js/script.js"></script>
+		<script src="../js/modules/myModule.js"></script>
+		<script src="../js/controllers/myController.js"></script>
 	</body>
 </html>
