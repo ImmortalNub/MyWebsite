@@ -1,6 +1,6 @@
 app.controller("myController", function($scope) {
-    $scope.firstName       = "Brian";
-    $scope.lastName        = "Janis";
+    $scope.firstName       = "Some";
+    $scope.lastName        = "Guy";
     $scope.fibonacciId     = "fibonacci";
     $scope.numSize         = 50;
     $scope.updateFibonacci = function() {

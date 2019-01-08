@@ -102,13 +102,14 @@ function basicTutorials() {
 	var id = "w3schools";
 	// Create an array-like object for titles.
 	var titles = {
-			"https://www.w3schools.com/colors/colors_picker.asp": "Color Picker",
-			"https://www.w3schools.com/css/default.asp":          "CSS",
-			"https://www.w3schools.com/bootstrap/default.asp":    "Bootstrap",
-			"https://www.w3schools.com/js/default.asp":           "JavaScript",
-			"https://www.w3schools.com/jquery/default.asp":       "jQuery",
-			"https://www.w3schools.com/angular/default.asp":      "AngularJS",
-			"https://www.w3schools.com/php/default.asp":          "PHP"
+			"https://www.w3schools.com/colors/colors_picker.asp":           "Color Picker",
+			"https://www.w3schools.com/css/default.asp":                    "CSS",
+			"https://www.w3schools.com/bootstrap/default.asp":              "Bootstrap",
+			"https://www.w3schools.com/js/default.asp":                     "JavaScript",
+			"https://www.w3schools.com/jquery/default.asp":                 "jQuery",
+			"https://www.w3schools.com/angular/default.asp":                "AngularJS",
+			"https://www.w3schools.com/angular/angular_ref_directives.asp": "AngularJS Reference",
+			"https://www.w3schools.com/php/default.asp":                    "PHP"
 	};
 
 	// Call dropdownList with titles.
