@@ -12,17 +12,17 @@
 	</head>
 
 	<body onload="initialization()">
-		<div class="container-fluid" ng-app="myModule" ng-controller="myController">
+		<div class="container-fluid" ng-app="myModule" ng-controller="header">
 			<div id="main-container">
 				<div id="main-header">
 					<div class="row">
 						<div class="col-xs-12">
-							<h1 ng-cloak>{{ firstName }} {{ lastName }}'s Home Page</h1>
+							<h1 ng-cloak>{{ person.firstName }} {{ person.lastName }}'s Home Page</h1>
 						</div>
 					</div>
 				</div>
 	
-				<nav id="navigator">
+				<nav id="navigator" ng-controller="navigator">
 					<div class="row">
 						<div class="col-xs-12">
 							<!-- Home Page -->
@@ -57,7 +57,7 @@
   								<ul class="dropdown-menu">
   									<!-- HTML5 -->
   									<div class="dropdown dropdown-sub">
-										<button class="btn btn-purple dropdown-toggle" type="button" data-toggle="dropdown">
+										<button class="btn btn-purple">
 											HTML5 <span class="caret"></span>
   										</button>
   										<ul id="bucky-html" class="dropdown-menu dropdown-menu-right"></ul>
@@ -65,12 +65,20 @@
 	
 									<!-- AngularJS -->
 									<div class="dropdown dropdown-sub">
-										<button class="btn btn-purple dropdown-toggle" type="button" data-toggle="dropdown">
+										<button class="btn btn-purple">
 											AngularJS <span class="caret"></span>
   										</button>
   										<ul id="bucky-angular-js" class="dropdown-menu dropdown-menu-right"></ul>
 									</div>
 								</ul>
+							</div>
+
+							<!-- kudvenkat Tutorials -->
+							<div class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+									kudvenkat <span class="caret"></span>
+  								</button>
+  								<ul id="kudvenkat" class="dropdown-menu"></ul>
 							</div>
 
 							<!-- Misc Notes -->
@@ -85,6 +93,8 @@
 				</nav>
 	
 				<div id="main-body">
+
+					<!-- First Row -->
 					<div class="row row-eq-height content">
 
 						<!-- Sample Column -->
@@ -116,12 +126,14 @@
 							</ul>
 						</div>
 					</div>
+
+					<!-- Second Row -->
 					<div class="row row-eq-height content-alt">
 
 						<!-- Fibonacci List -->
-						<div class="col-xs-4">
+						<div class="col-xs-4" ng-controller="fibonacci">
 							<h1>Fibonacci Numbers</h1>
-							<input ng-model="numSize" ng-change="updateFibonacci()" placeholder="Series size">
+							<input type="number" min="0" ng-model="numSize" ng-init="updateFibonacci()" ng-change="updateFibonacci()" placeholder="Series size">
 							<ol id="fibonacci"></ol>
 						</div>
 
@@ -130,9 +142,13 @@
 							<p>Type stuff here: <input type="text" ng-model="name"></p>
 							<h2 ng-cloak>{{ name }}</h2>
 						</div>
+
+						<div class="col-xs-4">
+						</div>
 					</div>
 				</div>
 
+				<!-- Footer -->
 				<footer id="footer">
 					<div class="row">
 						<div class="col-xs-4 col-xs-offset-8
@@ -145,7 +161,11 @@
 				</footer>
 			</div>
 		</div>
+		
 		<script src="../js/modules/myModule.js"></script>
+		<script src="../js/controllers/fibonacci.js"></script>
+		<script src="../js/controllers/header.js"></script>
 		<script src="../js/controllers/myController.js"></script>
+		<script src="../js/controllers/navigator.js"></script>
 	</body>
 </html>

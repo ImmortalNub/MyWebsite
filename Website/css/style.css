@@ -47,7 +47,7 @@
 }
 
 #navigator a:hover,
-.dropdown-sub > .dropdown-toggle:hover {
+.dropdown-sub > button:hover {
 	color: red;
 }
 
