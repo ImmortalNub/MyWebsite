@@ -26,7 +26,10 @@ function populateDropdowns() {
 ***************************************************************************/
 function basicTutorials() {
 	// Set element ID.
-	var id = "w3schools";
+	var id = "w3-schools";
+
+	var buttonName = "W3 Schools";
+
 	// Create an array-like object for titles.
 	var links = {
 		"Color Picker":        "https://www.w3schools.com/colors/colors_picker.asp",
@@ -40,7 +43,7 @@ function basicTutorials() {
 	};
 
 	// Call dropdownList with titles.
-	dropdownList(id, links);
+	dropdownList(id, buttonName, links);
 }
 
 // TheNewBoston
@@ -66,6 +69,7 @@ function buckyTutorials() {
 function buckyAngularJS() {
 	// Set element ID.
 	var id = "bucky-angular-js";
+
 	// Create an array-like object for titles.
 	var links = {
 		"1: Getting Started":            "https://www.youtube.com/watch?v=hXfigUyeHaY&list=PL6gx4Cwl9DGBYxWxJtLi8c6PGjNKGYGZZ&ab_channel=thenewboston",
@@ -73,7 +77,7 @@ function buckyAngularJS() {
 	};
 
 	// Call dropdownList with titles.
-	dropdownList(id, links);
+	generateListItems(id, links);
 }
 
 /**************************************************************************
@@ -86,6 +90,7 @@ function buckyAngularJS() {
 function buckyHTML() {
 	// Set element ID.
 	var id = "bucky-html";
+
 	// Create an array-like object for titles.
 	var links = {
 		"12: Making Everything Pretty":          "https://www.youtube.com/watch?v=yNtIO4X6cag&index=12&list=PL081AC329706B2953&ab_channel=thenewboston",
@@ -95,7 +100,7 @@ function buckyHTML() {
 	};
 
 	// Call dropdownList with titles.
-	dropdownList(id, links);
+	generateListItems(id, links);
 }
 
 /**************************************************************************
@@ -108,6 +113,9 @@ function buckyHTML() {
 function kudvenkat() {
 	// Set element ID.
 	var id = "kudvenkat";
+
+	var buttonName = "kudvenkat";
+
 	// Create an array-like object for titles.
 	var links = {
 		"Angular modules and controllers": "https://www.youtube.com/watch?v=gWmOKmgnQkU&ab_channel=kudvenkat",
@@ -115,7 +123,7 @@ function kudvenkat() {
 	};
 
 	// Call dropdownList with titles.
-	dropdownList(id, links);
+	dropdownList(id, buttonName, links);
 }
 
 // Notes
@@ -129,6 +137,9 @@ function kudvenkat() {
 function miscNotes() {
 	// Set element ID.
 	var id = "misc-notes";
+
+	var buttonName = "Notes";
+
 	// Create an array-like object for titles.
 	var links = {
 		"Html within Html":                         "https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file",
@@ -137,5 +148,5 @@ function miscNotes() {
 	};
 
 	// Call dropdownList with titles.
-	dropdownList(id, links);
+	dropdownList(id, buttonName, links);
 }

@@ -12,9 +12,9 @@
 	</head>
 
 	<body onload="initialization()">
-		<div class="container-fluid" ng-app="myModule" ng-controller="header">
+		<div class="container-fluid" ng-app="myModule">
 			<div id="main-container">
-				<div id="main-header">
+				<div id="main-header" ng-controller="header">
 					<div class="row">
 						<div class="col-xs-12">
 							<h1 ng-cloak>{{ person.firstName }} {{ person.lastName }}'s Home Page</h1>
@@ -41,12 +41,7 @@
 							target="_blank" rel="noopener noreferrer">Bad Website Example</a>
 
 							<!-- W3Schools References -->
-							<div class="dropdown">
-								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-									W3 Schools <span class="caret"></span>
-  								</button>
-  								<ul id="w3schools" class="dropdown-menu"></ul>
-							</div>
+							<div id="w3-schools" class="dropdown"></div>
 
 							<!-- TheNewBoston Tutorials -->
 							<div class="dropdown">
@@ -74,20 +69,10 @@
 							</div>
 
 							<!-- kudvenkat Tutorials -->
-							<div class="dropdown">
-								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-									kudvenkat <span class="caret"></span>
-  								</button>
-  								<ul id="kudvenkat" class="dropdown-menu"></ul>
-							</div>
+							<div id="kudvenkat" class="dropdown"></div>
 
 							<!-- Misc Notes -->
-							<div class="dropdown">
-								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-									Notes <span class="caret"></span>
-								</button>
-								<ul id="misc-notes" class="dropdown-menu"></ul>
-							</div>
+							<div id="misc-notes" class="dropdown"></div>
 						</div>
 					</div>
 				</nav>
