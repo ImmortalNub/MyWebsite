@@ -39,7 +39,8 @@ function basicTutorials() {
 		"jQuery":              "https://www.w3schools.com/jquery/default.asp",
 		"AngularJS":           "https://www.w3schools.com/angular/default.asp",
 		"AngularJS Reference": "https://www.w3schools.com/angular/angular_ref_directives.asp",
-		"PHP":                 "https://www.w3schools.com/php/default.asp"
+		"PHP":                 "https://www.w3schools.com/php/default.asp",
+		"Java":                "https://www.w3schools.com/java/"
 	};
 
 	// Call dropdownList with titles.
@@ -144,7 +145,8 @@ function miscNotes() {
 	var links = {
 		"Html within Html":                         "https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file",
 		"Angular Modules and Controllers in Files": "https://www.w3schools.com/angular/angular_modules.asp",
-		"Multiple Modules in AngularJS":            "https://stackoverflow.com/questions/18512434/multiple-module-in-angularjs"                              
+		"Multiple Modules in AngularJS":            "https://stackoverflow.com/questions/18512434/multiple-module-in-angularjs",                             
+		"C++ if else shorthand":                    "https://stackoverflow.com/questions/24793916/shorthand-c-if-else-statement"                              
 	};
 
 	// Call dropdownList with titles.
