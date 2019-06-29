@@ -29,27 +29,8 @@
 	border-bottom: 1px solid black;
 }
 
-#navigator {
-	background: blue;
-}
-
-#navigator a,
-#navigator .dropdown {
-	color: white;
-	display: inline-block;
-	padding: 5px;
-	text-decoration: none;
-}
-
-#navigator .dropdown-menu,
-#navigator .dropdown-menu a:hover,
 .btn-purple {
 	background: purple;
-}
-
-#navigator a:hover,
-.dropdown-sub > button:hover {
-	color: red;
 }
 
 .content > div:nth-child(even),
@@ -60,10 +41,6 @@
 .content > div:nth-child(odd),
 .content-alt > div:nth-child(even) {
 	background: #00B8E6; /*Blue*/
-}
-
-.dropdown-sub:hover > .dropdown-menu {
-	display: block;
 }
 
 .row-eq-height {

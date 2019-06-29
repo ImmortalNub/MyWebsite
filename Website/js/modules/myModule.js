@@ -30,3 +30,7 @@ function clamp(min, num, max) {
 * Return: None
 ***************************************************************************/
 function initialization() {}
+
+$(function() {
+	//
+});
