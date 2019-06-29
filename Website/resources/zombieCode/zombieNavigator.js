@@ -10,10 +10,6 @@ app.controller("navigator", function($scope) {
 * Return: None
 ***************************************************************************/
 function populateDropdowns() {
-	basicTutorials();
-	buckyTutorials();
-	kudvenkat();
-	miscNotes();
 }
 
 // W3Schools

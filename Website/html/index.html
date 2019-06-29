@@ -14,6 +14,8 @@
 	<body onload="initialization()">
 		<div class="container-fluid" ng-app="myModule">
 			<div id="main-container">
+
+				<!-- Main Header -->
 				<div id="main-header" ng-controller="header">
 					<div class="row">
 						<div class="col-xs-12">
@@ -22,7 +24,8 @@
 					</div>
 				</div>
 	
-				<nav id="navigator" ng-controller="navigator">
+				<!-- Navigator -->
+				<nav id="navigator">
 					<div class="row">
 						<div class="col-xs-12">
 							<!-- Home Page -->
@@ -41,38 +44,142 @@
 							target="_blank" rel="noopener noreferrer">Bad Website Example</a>
 
 							<!-- W3Schools References -->
-							<div id="w3-schools" class="dropdown"></div>
+							<div id="w3-schools" class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+									W3 Schools <span class="caret"></span>
+								</button>
+								<ul id="w3-schools-list" class="dropdown-menu">
+									<li>
+										<a href="https://www.w3schools.com/colors/colors_picker.asp" 
+										target="_blank" rel="noopener noreferrer">Color Picker</a>
+									</li>
+									<li>
+										<a href="https://www.w3schools.com/css/default.asp" 
+										target="_blank" rel="noopener noreferrer">CSS</a>
+									</li>
+									<li>
+										<a href="https://www.w3schools.com/bootstrap/default.asp" 
+										target="_blank" rel="noopener noreferrer">Bootstrap</a>
+									</li>
+									<li>
+										<a href="https://www.w3schools.com/js/default.asp" 
+										target="_blank" rel="noopener noreferrer">JavaScript</a>
+									</li>
+									<li>
+										<a href="https://www.w3schools.com/jquery/default.asp" 
+										target="_blank" rel="noopener noreferrer">jQuery</a>
+									</li>
+									<li>
+										<a href="https://www.w3schools.com/angular/default.asp" 
+										target="_blank" rel="noopener noreferrer">AngularJS</a>
+									</li>
+									<li>
+										<a href="https://www.w3schools.com/angular/angular_ref_directives.asp" 
+										target="_blank" rel="noopener noreferrer">AngularJS Reference</a>
+									</li>
+									<li>
+										<a href="https://www.w3schools.com/php/default.asp" 
+										target="_blank" rel="noopener noreferrer">PHP</a>
+									</li>
+									<li>
+										<a href="https://www.w3schools.com/java/" 
+										target="_blank" rel="noopener noreferrer">Java</a>
+									</li>
+								</ul>
+							</div>
 
 							<!-- TheNewBoston Tutorials -->
-							<div class="dropdown">
+							<div id="bucky" class="dropdown">
 								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
 									Bucky's Tutorials <span class="caret"></span>
   								</button>
 
   								<ul class="dropdown-menu">
   									<!-- HTML5 -->
-  									<div class="dropdown dropdown-sub">
+  									<div id="bucky-html" class="dropdown dropdown-sub">
 										<button class="btn btn-purple">
 											HTML5 <span class="caret"></span>
   										</button>
-  										<ul id="bucky-html" class="dropdown-menu dropdown-menu-right"></ul>
+  										<ul id="bucky-html-list" class="dropdown-menu dropdown-menu-right">
+  											<li>
+  												<a href="https://www.youtube.com/watch?v=yNtIO4X6cag&index=12&list=PL081AC329706B2953&ab_channel=thenewboston" 
+  												target="_blank" rel="noopener noreferrer">12: Making Everything Pretty</a>
+  											</li>
+											<li>
+												<a href="https://www.youtube.com/watch?v=tzAEGnBNAn0&index=13&list=PL081AC329706B2953&ab_channel=thenewboston" 
+												target="_blank" rel="noopener noreferrer">13: Finishing The Layout</a>
+											</li>
+											<li>
+												<a href="https://www.youtube.com/watch?v=xgYmccJ61eA&list=PL081AC329706B2953&index=14&frags=wn&ab_channel=thenewboston" 
+												target="_blank" rel="noopener noreferrer">14: Flexible Box Model</a>
+											</li>
+											<li>
+												<a href="https://www.youtube.com/watch?v=bi7ccKky8JU&list=PL081AC329706B2953&index=15&frags=wn&ab_channel=thenewboston" 
+												target="_blank" rel="noopener noreferrer">15: Styling the Header and Navigation</a>
+											</li>
+  										</ul>
 									</div>
 	
 									<!-- AngularJS -->
-									<div class="dropdown dropdown-sub">
+									<div id="bucky-angular-js" class="dropdown dropdown-sub">
 										<button class="btn btn-purple">
 											AngularJS <span class="caret"></span>
   										</button>
-  										<ul id="bucky-angular-js" class="dropdown-menu dropdown-menu-right"></ul>
+  										<ul id="bucky-angular-js-list" class="dropdown-menu dropdown-menu-right">
+  											<li>
+  												<a href="https://www.youtube.com/watch?v=hXfigUyeHaY&list=PL6gx4Cwl9DGBYxWxJtLi8c6PGjNKGYGZZ&ab_channel=thenewboston" 
+  												target="_blank" rel="noopener noreferrer">1: Getting Started</a>
+  											</li>
+											<li>
+												<a href="https://www.youtube.com/watch?v=vc9n0j6-D2U&index=2&list=PL6gx4Cwl9DGBYxWxJtLi8c6PGjNKGYGZZ&ab_channel=thenewboston" 
+												target="_blank" rel="noopener noreferrer">2: Overview and Core Concepts</a>
+											</li>
+  										</ul>
 									</div>
 								</ul>
 							</div>
 
 							<!-- kudvenkat Tutorials -->
-							<div id="kudvenkat" class="dropdown"></div>
+							<div id="kudvenkat" class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+									Kudvenkat <span class="caret"></span>
+								</button>
+								<ul id="kudvenkat-list" class="dropdown-menu">
+									<li>
+										<a href="https://www.youtube.com/watch?v=gWmOKmgnQkU&ab_channel=kudvenkat" 
+										target="_blank" rel="noopener noreferrer">Angular modules and controllers</a>
+									</li>
+									<li>
+										<a href="https://www.youtube.com/watch?v=mW25S2tiCOM&ab_channel=kudvenkat" 
+										target="_blank" rel="noopener noreferrer">Controllers in AngularJS</a>
+									</li>
+								</ul>
+							</div>
 
 							<!-- Misc Notes -->
-							<div id="misc-notes" class="dropdown"></div>
+							<div id="misc-notes" class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+									Notes <span class="caret"></span>
+								</button>
+								<ul id="misc-notes-list" class="dropdown-menu">
+									<li>
+										<a href="https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file" 
+										target="_blank" rel="noopener noreferrer">Html within Html</a>
+									</li>
+									<li>
+										<a href="https://www.w3schools.com/angular/angular_modules.asp" 
+										target="_blank" rel="noopener noreferrer">Angular Modules and Controllers in Files</a>
+									</li>
+									<li>
+										<a href="https://stackoverflow.com/questions/18512434/multiple-module-in-angularjs" 
+										target="_blank" rel="noopener noreferrer">Multiple Modules in AngularJS</a>
+									</li>
+									<li>
+										<a href="https://stackoverflow.com/questions/24793916/shorthand-c-if-else-statement" 
+										target="_blank" rel="noopener noreferrer">C++ if else shorthand</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</nav>
@@ -128,7 +235,10 @@
 							<h2 ng-cloak>{{ name }}</h2>
 						</div>
 
+						<!-- Duckduckgo search -->
 						<div class="col-xs-4">
+							<iframe src="https://duckduckgo.com/search.html?duck=yes&prefill=Search DuckDuckGo"
+							style="overflow:hidden;margin:20px;padding:20px;width:483px;" frameborder="0"></iframe>
 						</div>
 					</div>
 				</div>
@@ -151,6 +261,5 @@
 		<script src="../js/controllers/fibonacci.js"></script>
 		<script src="../js/controllers/header.js"></script>
 		<script src="../js/controllers/myController.js"></script>
-		<script src="../js/controllers/navigator.js"></script>
 	</body>
 </html>
