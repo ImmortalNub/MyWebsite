@@ -2,17 +2,18 @@
 	background: blue;
 }
 
-#navigator a:hover,
-#navigator button:hover {
-	color: red;
-}
-
 #navigator a,
 #navigator .dropdown {
 	color: white;
 	display: inline-block;
 	padding: 5px;
 	text-decoration: none;
+}
+
+#navigator a:hover,
+#navigator button:hover,
+#navigator li:hover {
+	color: red;
 }
 
 #navigator .dropdown-menu,
@@ -25,12 +26,19 @@
     position:relative;
 }
 
-li.dropdown-submenu:hover > ul.dropdown-menu {
-    display: block;
+ul.dropdown-menu li,
+ul.dropdown-menu li a {
+	width: 100%;
 }
 
+/*Orientation of submenu items with respect to submenu*/
 .dropdown-submenu > .dropdown-menu {
     top:8px;
     right:100%;
     margin-top:-6px;
+}
+
+/*Display submenu items on hover*/
+li.dropdown-submenu:hover > ul.dropdown-menu {
+    display: block;
 }
