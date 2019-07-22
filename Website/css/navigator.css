@@ -1,5 +1,6 @@
 #navigator {
 	background: blue;
+	border-bottom: 1px solid black;
 }
 
 #navigator a,

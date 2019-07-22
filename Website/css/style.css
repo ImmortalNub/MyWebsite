@@ -7,11 +7,11 @@
 }
 
 #main-container > * {
-	padding: 0px 20px;
+	padding: 0px 15px;
 }
 
-#main-body {
-	padding-top: 20px;
+#main-body .row {
+	min-height: 200px;
 }
 
 #main-container {
@@ -33,14 +33,21 @@
 	background: purple;
 }
 
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .content > div:nth-child(even),
 .content-alt > div:nth-child(odd) {
-	background: #33CC33; /*Green*/
+	background: rgba(51, 204, 51, 1.0); /*Green #33CC33*/
 }
 
 .content > div:nth-child(odd),
 .content-alt > div:nth-child(even) {
-	background: #00B8E6; /*Blue*/
+	background: rgba(0, 184, 230, 1.0); /*Blue #00B8E6*/
 }
 
 .row-eq-height {

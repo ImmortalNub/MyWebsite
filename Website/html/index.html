@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myModule">
 	<head>
 		<title>Home</title>
 		<meta charset="utf-8" />
@@ -13,7 +13,7 @@
 	</head>
 
 	<body onload="initialization()">
-		<div class="container-fluid" ng-app="myModule">
+		<div class="container-fluid">
 			<div id="main-container">
 
 				<!-- Main Header -->
@@ -29,6 +29,7 @@
 				<nav id="navigator">
 					<div class="row">
 						<div class="col-xs-12">
+							
 							<!-- Home Page -->
 							<a href="index.html">Home</a>
 							
@@ -46,12 +47,11 @@
 
 							<!-- W3Schools References -->
 							<div id="w3-schools" class="dropdown btn-group">
-								<button class="btn btn-primary" type="button">
-									W3 Schools
-								</button>
-								<button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
+								<a href="https://www.w3schools.com" class="btn btn-primary" type="button"
+								target="_blank" rel="noopener noreferrer">W3 Schools</a>
+								<a class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
 									<span class="caret"></span>
-								</button>
+								</a>
 
 								<ul id="w3-schools-list" class="dropdown-menu">
 									<li>
@@ -93,61 +93,81 @@
 								</ul>
 							</div>
 
+							<!-- Angular JS -->
+							<div id="angular-js" class="dropdown btn-group">
+								<a class="btn btn-primary" type="button">Angular JS</a>
+								<a class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
+									<span class="caret"></span>
+								</a>
+
+								<ul id="angular-js-list" class="dropdown-menu">
+									<li>
+										<a href="https://docs.angularjs.org/guide" 
+										target="_blank" rel="noopener noreferrer">Guide</a>
+									</li>
+									<li>
+										<a href="https://docs.angularjs.org/api" 
+										target="_blank" rel="noopener noreferrer">API</a>
+									</li>
+								</ul>
+							</div>
+
 							<!-- TheNewBoston Tutorials -->
 							<div id="bucky" class="dropdown btn-group">
-								<button class="btn btn-primary" type="button">
-									Bucky's Tutorials
-  								</button>
-								<button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
-									<span class="caret"></span>
-  								</button>
-
+									<a href="https://www.youtube.com/channel/UCJbPGzawDH1njbqV-D5HqKw?&ab_channel=thenewboston"
+									class="btn btn-primary" type="button" target="_blank" rel="noopener noreferrer">Bucky's Tutorials</a>
+									<a class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
+										<span class="caret"></span>
+	  								</a>
   								<ul class="dropdown-menu">
+  									
   									<!-- HTML5 -->
   									<li id="bucky-html" class="dropdown dropdown-submenu btn-group">
-  										<button class="btn btn-purple dropdown-toggle dropdown-toggle-split" type="button">
-											<span class="caret"></span>
-		  								</button>
-										<button class="btn btn-purple">
-											HTML5
-  										</button>
+										<a href="https://www.youtube.com/playlist?list=PL081AC329706B2953"
+										target="_blank" rel="noopener noreferrer">
+  											<button class="btn btn-purple dropdown-toggle dropdown-toggle-split" type="button">
+												<span class="caret"></span>
+		  									</button>
+											<button class="btn btn-purple">HTML5</button>
+										</a>
 
   										<ul id="bucky-html-list" class="dropdown-menu dropdown-menu-right">
   											<li>
-  												<a href="https://www.youtube.com/watch?v=yNtIO4X6cag&index=12&list=PL081AC329706B2953&ab_channel=thenewboston" 
+  												<a href="https://www.youtube.com/watch?v=yNtIO4X6cag" 
   												target="_blank" rel="noopener noreferrer">12: Making Everything Pretty</a>
   											</li>
 											<li>
-												<a href="https://www.youtube.com/watch?v=tzAEGnBNAn0&index=13&list=PL081AC329706B2953&ab_channel=thenewboston" 
+												<a href="https://www.youtube.com/watch?v=tzAEGnBNAn0" 
 												target="_blank" rel="noopener noreferrer">13: Finishing The Layout</a>
 											</li>
 											<li>
-												<a href="https://www.youtube.com/watch?v=xgYmccJ61eA&list=PL081AC329706B2953&index=14&frags=wn&ab_channel=thenewboston" 
+												<a href="https://www.youtube.com/watch?v=xgYmccJ61eA" 
 												target="_blank" rel="noopener noreferrer">14: Flexible Box Model</a>
 											</li>
 											<li>
-												<a href="https://www.youtube.com/watch?v=bi7ccKky8JU&list=PL081AC329706B2953&index=15&frags=wn&ab_channel=thenewboston" 
+												<a href="https://www.youtube.com/watch?v=bi7ccKky8JU" 
 												target="_blank" rel="noopener noreferrer">15: Styling the Header and Navigation</a>
 											</li>
   										</ul>
 									</li>
 	
-									<!-- AngularJS -->
+									<!-- Angular 2 -->
 									<li id="bucky-angular-js" class="dropdown dropdown-submenu btn-group">
-										<button class="btn btn-purple dropdown-toggle dropdown-toggle-split" type="button">
-											<span class="caret"></span>
-		  								</button>
-										<button class="btn btn-purple">
-											AngularJS
-  										</button>
+										<a href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGBYxWxJtLi8c6PGjNKGYGZZ"
+										target="_blank" rel="noopener noreferrer">
+											<button class="btn btn-purple dropdown-toggle dropdown-toggle-split" type="button">
+												<span class="caret"></span>
+		  									</button>
+											<button class="btn btn-purple">Angular 2</button>
+										</a>
 
   										<ul id="bucky-angular-js-list" class="dropdown-menu dropdown-menu-right">
   											<li>
-  												<a href="https://www.youtube.com/watch?v=hXfigUyeHaY&list=PL6gx4Cwl9DGBYxWxJtLi8c6PGjNKGYGZZ&ab_channel=thenewboston" 
+  												<a href="https://www.youtube.com/watch?v=hXfigUyeHaY" 
   												target="_blank" rel="noopener noreferrer">1: Getting Started</a>
   											</li>
 											<li>
-												<a href="https://www.youtube.com/watch?v=vc9n0j6-D2U&index=2&list=PL6gx4Cwl9DGBYxWxJtLi8c6PGjNKGYGZZ&ab_channel=thenewboston" 
+												<a href="https://www.youtube.com/watch?v=vc9n0j6-D2U" 
 												target="_blank" rel="noopener noreferrer">2: Overview and Core Concepts</a>
 											</li>
   										</ul>
@@ -157,13 +177,11 @@
 
 							<!-- kudvenkat Tutorials -->
 							<div id="kudvenkat" class="dropdown btn-group">
-								<button class="btn btn-primary" type="button">
-									Kudvenkat
-								</button>
-								<button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
+								<a href="https://www.youtube.com/playlist?list=PL6n9fhu94yhWKHkcL7RJmmXyxkuFB3KSl"
+								class="btn btn-primary" type="button" target="_blank" rel="noopener noreferrer">Kudvenkat</a>
+								<a class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
 									<span class="caret"></span>
-  								</button>
-
+  								</a>
 								<ul id="kudvenkat-list" class="dropdown-menu">
 									<li>
 										<a href="https://www.youtube.com/watch?v=gWmOKmgnQkU&ab_channel=kudvenkat" 
@@ -176,14 +194,43 @@
 								</ul>
 							</div>
 
+							<!-- codedamn Tutorials -->
+							<div id="codedamn" class="dropdown btn-group">
+								<a href="https://www.youtube.com/playlist?list=PLYxzS__5yYQmX2bItSRCqwiQZn5dIL1gt"
+								class="btn btn-primary" type="button" target="_blank" rel="noopener noreferrer">codedamn</a>
+								<a class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
+									<span class="caret"></span>
+  								</a>
+								<ul id="codedamn-list" class="dropdown-menu">
+									<li>
+										<a href="https://www.youtube.com/watch?v=s3qZF4jhgDo&ab_channel=codedamn" 
+										target="_blank" rel="noopener noreferrer">AngularJS Tutorial 1: Welcome To AngularJS!</a>
+									</li>
+									<li>
+										<a href="https://www.youtube.com/watch?v=oRHPmkvED2E&ab_channel=codedamn" 
+										target="_blank" rel="noopener noreferrer">AngularJS Tutorial 2: Hello World</a>
+									</li>
+									<li>
+										<a href="https://www.youtube.com/watch?v=GQmON8ZryGI&ab_channel=codedamn" 
+										target="_blank" rel="noopener noreferrer">AngularJS Tutorial 3: ng-model and ng-bind directives</a>
+									</li>
+									<li>
+										<a href="https://www.youtube.com/watch?v=4XYu3zU6NLo&ab_channel=codedamn" 
+										target="_blank" rel="noopener noreferrer">AngularJS Tutorial 4: Introduction To Directives</a>
+									</li>
+									<li>
+										<a href="https://www.youtube.com/watch?v=szmQTNloBoc&ab_channel=codedamn" 
+										target="_blank" rel="noopener noreferrer">AngularJS Tutorial 5: Introduction To Expressions</a>
+									</li>
+								</ul>
+							</div>
+
 							<!-- Misc Notes -->
 							<div id="misc-notes" class="dropdown btn-group">
-								<button class="btn btn-primary" type="button">
-									Notes
-								</button>
-								<button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
+								<a class="btn btn-primary" type="button">Notes</a>
+								<a class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
 									<span class="caret"></span>
-  								</button>
+  								</a>
   								
 								<ul id="misc-notes-list" class="dropdown-menu">
 									<li>
@@ -208,25 +255,22 @@
 					</div>
 				</nav>
 	
+				<!-- Main Body -->
 				<div id="main-body">
 
 					<!-- First Row -->
 					<div class="row row-eq-height content">
 
-						<!-- Sample Column -->
+						<!-- Todo List -->
 						<div class="col-xs-4">
-							<h1>Article</h1>
-							<h2>Subtitle</h2>
-							<p>This is my article.</p>
-							<p>- Jesus was here!</p>
+							<h1>Todo List</h1>
+							<ul></ul>
 						</div>
 
-
-						<!-- Sample Column -->
+						<!-- Duckduckgo search -->
 						<div class="col-xs-4">
-							<h1>News</h1>
-							<h2></h2>
-							<p>Hello World!</p>
+							<iframe class="centered" src="https://duckduckgo.com/search.html?duck=yes&prefill=Search DuckDuckGo"
+							style="overflow:hidden;margin:20px;padding:20px;width:483px;" frameborder="0"></iframe>
 						</div>
 
 						<!-- Stuff to learn -->
@@ -255,14 +299,35 @@
 
 						<!-- Simple Angular Application -->
 						<div class="col-xs-4">
-							<p>Type stuff here: <input type="text" ng-model="name"></p>
-							<h2 ng-cloak>{{ name }}</h2>
+							<p>Enter your name: <input type="text" ng-model="name"></p>
+							<h2 ng-cloak>Hello, {{ name }}</h2>
 						</div>
 
-						<!-- Duckduckgo search -->
+						<!--  -->
 						<div class="col-xs-4">
-							<iframe src="https://duckduckgo.com/search.html?duck=yes&prefill=Search DuckDuckGo"
-							style="overflow:hidden;margin:20px;padding:20px;width:483px;" frameborder="0"></iframe>
+							<!--  -->
+						</div>
+					</div>
+
+					<!-- Third Row -->
+					<div class="row row-eq-height content">
+
+						<!-- Siren Torturers KF1 Gametracker banner -->
+						<div class="col-xs-4">
+							<a class="centered" href="https://www.gametracker.com/server_info/74.91.125.59:7707/" target="_blank">
+								<img src="https://cache.gametracker.com/server_info/74.91.125.59:7707/b_560_95_1.png" border="0" width="560" height="95" alt=""/>
+							</a>
+						</div>
+
+						<!-- Siren Torturers KF1 Gametracker banner -->
+						<div class="col-xs-4">
+							<a class="centered" href="https://www.gametracker.com/server_info/74.91.124.127:7777/" target="_blank">
+								<img src="https://cache.gametracker.com/server_info/74.91.124.127:7777/b_560_95_1.png" border="0" width="560" height="95" alt=""/>
+							</a>
+						</div>
+
+						<!--  -->
+						<div class="col-xs-4">
 						</div>
 					</div>
 				</div>
