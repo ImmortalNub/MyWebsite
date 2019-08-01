@@ -1,1 +1,3 @@
-app.controller("myController", function($scope) {});
+app.controller("myController", function($scope) {
+	$scope.name = "Brian";
+});

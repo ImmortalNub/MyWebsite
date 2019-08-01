@@ -1,33 +1,30 @@
 app.controller("fibonacci", function($scope) {
-    $scope.fibonacciId = "fibonacci";
-    $scope.numSize     = 10;
+	$scope.initializeFibonacci = function() {
+		$scope.fibonacciId = document.getElementById("fibonacci");
+	}
 
     $scope.updateFibonacci = function() {
         
         // Create initial variables.
-		var numbers = document.getElementById($scope.fibonacciId);
 		var prev    = 0;
 		var current = 1;
 		var next    = 0;
-		var numSize = clamp(0, $scope.numSize, 1477);
 
     	// Reset the fibonacci series on screen.
-    	numbers.innerHTML = "";
+    	$scope.fibonacciId.innerHTML = "";
+
+    	// Update series size.
+		$scope.seriesSize = clamp(0, $scope.seriesSize, 1477);
 
     	// Create list items for fibonacci numbers.
-		for (var i = 0; i < numSize; i++) {
-			// Put the number on the screen as a list item.
-			numbers.innerHTML += "<li>" + current + "</li>";
+		for (var i = 0; i < $scope.seriesSize; i++) {
+			// Put the numbers on the screen as list items.
+			$scope.fibonacciId.innerHTML += "<li>" + current + "</li>";
 
 			// Increment the variables through the fibonacci numbers.
 			next    = prev + current;
 			prev    = current;
 			current = next;
 		}
-	
-		// Reset the variables just to be thorough.
-		prev    = 0;
-		current = 0;
-		next    = 0;
 	}
 });

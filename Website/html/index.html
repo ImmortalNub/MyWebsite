@@ -222,6 +222,14 @@
 										<a href="https://www.youtube.com/watch?v=szmQTNloBoc&ab_channel=codedamn" 
 										target="_blank" rel="noopener noreferrer">AngularJS Tutorial 5: Introduction To Expressions</a>
 									</li>
+									<li>
+										<a href="https://www.youtube.com/watch?v=tn4z5qeB5N8&ab_channel=codedamn" 
+										target="_blank" rel="noopener noreferrer">AngularJS Tutorial 6: More On Expressions And Directives</a>
+									</li>
+									<li>
+										<a href="https://www.youtube.com/watch?v=MvCJ0MtjScw&ab_channel=codedamn" 
+										target="_blank" rel="noopener noreferrer">AngularJS Tutorial 7: ng-repeat</a>
+									</li>
 								</ul>
 							</div>
 
@@ -293,7 +301,7 @@
 						<!-- Fibonacci List -->
 						<div class="col-xs-4" ng-controller="fibonacci">
 							<h1>Fibonacci Numbers</h1>
-							<input type="number" min="0" ng-model="numSize" ng-init="updateFibonacci()" ng-change="updateFibonacci()" placeholder="Series size">
+							<input type="number" min="0" ng-model="seriesSize" ng-init="initializeFibonacci()" ng-change="updateFibonacci()" placeholder="Series size">
 							<ol id="fibonacci"></ol>
 						</div>
 
@@ -304,8 +312,8 @@
 						</div>
 
 						<!--  -->
-						<div class="col-xs-4">
-							<!--  -->
+						<div class="col-xs-4" ng-controller="myController">
+							<p>{{ name }}</p>
 						</div>
 					</div>
 
