@@ -29,6 +29,10 @@
 	border-bottom: 1px solid black;
 }
 
+.btn-blue {
+	background: blue;
+}
+
 .btn-purple {
 	background: purple;
 }

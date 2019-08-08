@@ -1,7 +1,7 @@
 app.controller("header", function($scope) {
 	var person = {
-		firstName: "Some",
-		lastName:  "Guy"
+		firstName: "Immortal",
+		lastName:  "Nub"
 	};
 	$scope.person = person;
 });

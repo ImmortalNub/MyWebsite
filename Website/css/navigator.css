@@ -14,17 +14,17 @@
 #navigator a:hover,
 #navigator button:hover,
 #navigator li:hover {
-	color: red;
+	color: #BBBBBB;
 }
 
 #navigator .dropdown-menu,
 #navigator .dropdown-menu a:hover {
-	background: purple;
+	background: blue;
 }
 
 /*Submenu stuff*/
 .dropdown-submenu {
-    position:relative;
+    position: relative;
 }
 
 ul.dropdown-menu li,
@@ -34,9 +34,9 @@ ul.dropdown-menu li a {
 
 /*Orientation of submenu items with respect to submenu*/
 .dropdown-submenu > .dropdown-menu {
-    top:8px;
-    right:100%;
-    margin-top:-6px;
+    top: 8px;
+    right: 100%;
+    margin-top: -6px;
 }
 
 /*Display submenu items on hover*/
